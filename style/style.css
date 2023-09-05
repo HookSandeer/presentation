@@ -13,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--police);
+    scroll-behavior: smooth;
 }
 
 .main {
@@ -72,13 +73,29 @@ body {
 #contact-id {
     font-weight: bold;
     font-size: 25px;
+    color: white;
+    text-decoration: none;
     transition: all 0.2s;
 }
 #contact-id:hover {
-    font-size: 30px;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-size: 26px;
+}
+
+#name-contact {
+    font-weight: bold;
+    text-decoration-line: none;
 }
 
 .rightPanel { 
     grid-area: 1 / 2 / 2 / 3; 
     background-color: #51585b;
+}
+
+#photo {
+    position: fixed;
+    top: 35%;
+    left: 68%;
 }
