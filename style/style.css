@@ -1,0 +1,50 @@
+/* CSS FILE, By Hooksandeer */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+}
+    
+.leftPanel { 
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topBar {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+
+.intraLink {
+    position: absolute;
+    top: 1%;
+    right: 51%;
+}
+
+.text {
+    text-align: center;
+    color: red;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.rightPanel { 
+    grid-area: 1 / 2 / 2 / 3; 
+    background-color: #51585b;
+}
