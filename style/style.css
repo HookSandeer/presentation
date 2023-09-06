@@ -27,7 +27,7 @@ body {
     
 .leftPanel { 
     grid-area: 1 / 1 / 2 / 2;
-    background-color: #22222222;
+    background-color: black;
     color: white;
 }
 
@@ -75,12 +75,12 @@ body {
     font-size: 25px;
     color: white;
     text-decoration: none;
+    text-decoration-color: #175732;
     transition: all 0.2s;
 }
 #contact-id:hover {
     color: white;
     text-decoration: underline;
-    text-decoration-color: white;
     font-size: 26px;
 }
 
@@ -89,13 +89,35 @@ body {
     text-decoration-line: none;
 }
 
+#link {
+    position: relative;
+    top: 20%;
+    color: white;
+    font-size: 22px;
+    transition: all 0.1s;
+    text-decoration: none;
+}
+#link:hover {
+    font-size: 32px;
+    text-decoration: underline;
+    text-decoration-color: #175732;
+}
+
+.about {
+    color: red;
+    position: relative;
+    left: 25%;
+    top: 100%;
+}
+
 .rightPanel { 
     grid-area: 1 / 2 / 2 / 3; 
-    background-color: #51585b;
+    background-color: #175732;
 }
 
 #photo {
     position: fixed;
     top: 35%;
     left: 68%;
+    border-radius: 20px;
 }
