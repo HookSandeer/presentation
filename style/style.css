@@ -8,12 +8,14 @@
     --police2: 'Playfair Display', serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
     padding: 0;
     font-family: var(--police);
-    scroll-behavior: smooth;
 }
 
 .main {
@@ -29,21 +31,48 @@ body {
     grid-area: 1 / 1 / 2 / 2;
     background-color: black;
     color: white;
+
 }
 
+.box-header {
+    grid-column: 1/2;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 35px;
+    background-color: black;
+    border: 10px solid black;
+    opacity: 100%;
+    z-index: 990;
+}
+
+
 .topBar {
-    position: absolute;
+    position: fixed;
     top: 1%;
     left: 1%;
     font-size: 20px;
 }
 
-.intraLink {
-    position: absolute;
+.intralink-place {
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    list-style-type: none;
     top: 1%;
     right: 51%;
-    font-size: 20px;
     word-spacing: 20px;
+    font-size: 20px;
+    transition: all 0.2s;
+}
+
+.text-title {
+    position: relative;
+    margin-block-start: 30%;
+    left: 25%;
+    width: auto;
+    font-weight: 300;
+    font-size: 25px;
 }
 
 #titleText {
@@ -52,18 +81,9 @@ body {
     font-family: var(--police2);
 }
 
-.text-title {
-    position: relative;
-    top: 20%;
-    left: 25%;
-    width: auto;
-    font-weight: 300;
-    font-size: 25px;
-}
-
 .contact {
     position: relative;
-    top: 30%;
+    margin-block-start: 15%;
     left: 25%;
     width: auto;
     font-weight: 300;
@@ -84,14 +104,13 @@ body {
     font-size: 26px;
 }
 
-#name-contact {
-    font-weight: bold;
-    text-decoration-line: none;
+.link {
+    position: relative;
+    margin-block-start: 10px;
+    margin-left: 25%;
 }
 
 #link {
-    position: relative;
-    top: 20%;
     color: white;
     font-size: 22px;
     transition: all 0.1s;
@@ -103,21 +122,61 @@ body {
     text-decoration-color: #175732;
 }
 
-.about {
-    color: red;
+.paragraph {
     position: relative;
-    left: 25%;
-    top: 100%;
+    color: white;
+    max-width: 50%;
+    margin-block-start: 50%;
+    margin-left: 25%;
+}
+
+#section-title {
+    color: white;
+    font-family: var(--police2);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 35px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 .rightPanel { 
     grid-area: 1 / 2 / 2 / 3; 
     background-color: #175732;
+    z-index: 991;
 }
+
+#download-button {
+    position: fixed;
+    right: 3%;
+    top: 3%;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 15px 32px;
+    font-size: 20px;
+    z-index: 998;
+    transition: all 0.3s ease;
+}
+#download-button:hover {
+    background-color: white;
+    color: #175732;
+    border-radius: 50px;
+    padding: 18px 37px;
+    font-size: 25px;
+}
+
 
 #photo {
     position: fixed;
     top: 35%;
     left: 68%;
     border-radius: 20px;
+    z-index: 999;
 }
